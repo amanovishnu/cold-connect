@@ -18,7 +18,7 @@ def create_streamlit_app(clean_text):
         label="Step 1: Groq API Key",
         placeholder="Enter your groq api Key",
         help="Enter your GROQ API Key",
-        value="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",
+        value="",
         type="password"
     )
 
