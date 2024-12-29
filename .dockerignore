@@ -1,0 +1,8 @@
+__pycache__/
+notebook/
+vectorstore/
+.env
+.gitignore
+LICENSE
+README.md
+setuo.cfg
