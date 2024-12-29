@@ -17,7 +17,21 @@
     cd outreach-composer-for-job-search
     ```
 
-2. Install the required dependencies:
+2. Create a virtual environment using Anaconda or `virtualenv`:
+
+    **Using Anaconda:**
+    ```sh
+    conda create -n cenv python=3.10 -y
+    conda activate cenv
+    ```
+
+    **Using `virtualenv`:**
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. Install the required dependencies:
     ```sh
     pip install -r requirements.txt
     ```
@@ -38,6 +52,18 @@
     - Select the message type (email or LinkedIn message).
     - Choose a language model and adjust the creativity level.
     - Paste the job posting URL and click **"Generate"**.
+
+**Note:** The first time you run the application, downloading the embedding model may take 2-3 minutes.
+
+### Getting Groq API Key
+
+1. Visit the [Groq API website](https://groq.com/).
+2. Sign up for a free account.
+3. Navigate to the API section and generate a new API key.
+4. Copy the API key and use it in the application when prompted.
+
+
+### Docker
 
 To create and run the Docker image:
 
