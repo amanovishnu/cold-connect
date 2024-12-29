@@ -27,10 +27,10 @@ jobs:
 
     - name: Build and tag Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }} .
-        docker tag ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }} ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:latest
+        docker build -t ${{ secrets.DOCKER_IMAGE_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }} .
+        docker tag ${{ secrets.DOCKER_IMAGE_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }} ${{ secrets.DOCKER_IMAGE_USERNAME }}/outreach-composer-for-job-search:latest
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:latest
+        docker push ${{ secrets.DOCKER_IMAGE_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }}
+        docker push ${{ secrets.DOCKER_IMAGE_USERNAME }}/outreach-composer-for-job-search:latest
