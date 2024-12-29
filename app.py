@@ -49,7 +49,7 @@ def create_streamlit_app(clean_text):
             help="Choose a model to generate the text [default: llama-3.3-70b-versatile]"
         )
         temperature = st.sidebar.slider(
-            label="Step 5: Creativity",
+            label="Step 7: Creativity",
             min_value=0.0,
             max_value=1.0,
             value=0.5,
