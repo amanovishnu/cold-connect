@@ -39,21 +39,37 @@
     - Choose a language model and adjust the creativity level.
     - Paste the job posting URL and click **"Generate"**.
 
+To create and run the Docker image:
+
+1. Build the Docker image:
+    ```sh
+    docker build -t outreach-composer-for-job-search .
+    ```
+
+2. Run the Docker container:
+    ```sh
+    docker run -p 8501:8501 outreach-composer-for-job-search
+    ```
+
+3. Open your browser and navigate to **`http://localhost:8501`**.
+
+
 ### File Structure
 
 - **`app.py`** : Main Streamlit application file
 - **`chains.py`** : Contains the Chain class for extracting jobs and generating messages
 - **`portfolio.py`** : Contains the Portfolio class for managing and querying portfolio links
 - **`utils.py`** : Utility functions for cleaning text and fetching model lists
-- **`notebook.ipynb`** : Jupyter notebook for testing and development
-- **`docker-compose.yml`** : Docker Compose configuration (empty)
-- **`Dockerfile`** : Dockerfile for containerizing the application (empty)
+- **`notebook`** : Directory containing Jupyter notebook and portfolio CSV file
+  - **`notebook.ipynb`** : Jupyter notebook for testing and development
+  - **`my_portfolio.csv`** : Sample portfolio CSV file
+- **`Dockerfile`** : Dockerfile for containerizing the application
 - **`.env`** : Environment variables file (not included in the repository)
 - **`.gitignore`** : Git ignore file
 - **`LICENSE`** : License file
 - **`README.md`** : Project README file
+- **`requirements.txt`** : List of Python dependencies
 - **`setup.cfg`** : Configuration for flake8 and mypy
-- **`settings.json`** : VSCode settings
 
 ### License
 This project is licensed under the MIT License. See the **LICENSE** file for details.
