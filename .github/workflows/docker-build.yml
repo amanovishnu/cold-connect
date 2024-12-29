@@ -32,5 +32,5 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/outreach-composer-for-job-search:latest
+        docker push amanovishnu/outreach-composer-for-job-search:${{ github.sha }}
+        docker push amanovishnu/outreach-composer-for-job-search:latest
