@@ -168,7 +168,8 @@ cython_debug/
 #.idea/
 
 # PyPI configuration file
+vectorstore/
 .pypirc
-
+.vscode/
 .DS_Store
 .env
