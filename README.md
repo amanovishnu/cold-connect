@@ -99,34 +99,25 @@ A pre-built Docker image is available on Docker Hub:
 
 ### File Structure
 
-- **`app.py`** : Main Streamlit application file
-- **`chains.py`** : Contains the Chain class for extracting jobs and generating messages
-- **`portfolio.py`** : Contains the Portfolio class for managing and querying portfolio links
-- **`utils.py`** : Utility functions for cleaning text and fetching model lists
-- **`notebook`** : Directory containing Jupyter notebook and portfolio CSV file
-  - **`notebook.ipynb`** : Jupyter notebook for testing and development
-  - **`my_portfolio.csv`** : Sample portfolio CSV file
-- **`Dockerfile`** : Dockerfile for containerizing the application
-- **`.env`** : Environment variables file (not included in the repository)
-- **`.gitignore`** : Git ignore file
-- **`LICENSE`** : License file
-- **`README.md`** : Project README file
-- **`requirements.txt`** : List of Python dependencies
-- **`setup.cfg`** : Configuration for flake8 and mypy
+```sh
+├── .github                   <- GitHub configuration directory (e.g., workflows for CI/CD)
+├── notebook                  <- Directory containing Jupyter notebook and portfolio CSV file
+│   ├── my_portfolio.csv      <- Sample portfolio CSV file
+│   └── notebook.ipynb        <- Jupyter notebook for testing and development
+├── .dockerignore             <- Specifies files and directories to ignore when building the Docker image
+├── .env                      <- Environment variables file (not included in the repository)
+├── .gitignore                <- Git ignore file
+├── app.py                    <- Main Streamlit application file
+├── chains.py                 <- Contains the Chain class for extracting jobs and generating messages
+├── Dockerfile                <- Dockerfile for containerizing the application
+├── LICENSE                   <- License file
+├── portfolio.py              <- Contains the Portfolio class for managing and querying portfolio links
+├── README.md                 <- Project README file
+├── requirements.txt          <- List of Python dependencies
+├── setup.cfg                 <- Configuration for flake8 and mypy
+└── utils.py                  <- Utility functions for cleaning text and fetching model lists
 
-├── Dockerfile
-├── LICENSE
-├── README.md
-├── app.py
-├── chains.py
-├── notebook
-│   ├── my_portfolio.csv
-│   └── notebook.ipynb
-├── portfolio.py
-├── requirements.txt
-├── setup.cfg
-├── utils.py
-
+```
 
 
 ### License
