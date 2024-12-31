@@ -65,6 +65,8 @@
 
 ### Docker
 
+##### Build and Run Locally
+
 To create and run the Docker image:
 
 1. Build the Docker image:
@@ -79,6 +81,21 @@ To create and run the Docker image:
 
 3. Open your browser and navigate to **`http://localhost:8501`**.
 
+##### Run with Pre-Built Image
+
+A pre-built Docker image is available on Docker Hub:
+
+1. Pull the Docker image:
+    ```sh
+    docker pull amanovishnu/outreach-composer-for-job-search:latest
+    ```
+
+2. Run the Docker container:
+    ```sh
+    docker run -p 8501:8501 amanovishnu/outreach-composer-for-job-search:latest
+    ```
+
+3. Open **`http://localhost:8501`** in your browser to use the Streamlit application.
 
 ### File Structure
 
@@ -96,6 +113,21 @@ To create and run the Docker image:
 - **`README.md`** : Project README file
 - **`requirements.txt`** : List of Python dependencies
 - **`setup.cfg`** : Configuration for flake8 and mypy
+
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── app.py
+├── chains.py
+├── notebook
+│   ├── my_portfolio.csv
+│   └── notebook.ipynb
+├── portfolio.py
+├── requirements.txt
+├── setup.cfg
+├── utils.py
+
+
 
 ### License
 This project is licensed under the MIT License. See the **LICENSE** file for details.
