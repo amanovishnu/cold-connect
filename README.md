@@ -1,6 +1,6 @@
-# outreach-composer-for-job-search
+# cold-connect
 
-**`outreach-composer-for-job-search`** is a Streamlit application designed to help job seekers generate personalized cold emails or LinkedIn messages. By leveraging the **`groq-api`** and various language models, the app extracts job postings from provided URLs, cleans the text, and crafts professional outreach messages.
+**`cold-connect`** is a Streamlit application designed to help job seekers generate personalized cold emails or LinkedIn messages. By leveraging the **`groq-api`** and various language models, the app extracts job postings from provided URLs, cleans the text, and crafts professional outreach messages.
 
 ### Features
 - Extract job postings directly from career pages.
@@ -13,8 +13,8 @@
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/amanovishnu/outreach-composer-for-job-search.git
-    cd outreach-composer-for-job-search
+    git clone https://github.com/amanovishnu/cold-connect.git
+    cd cold-connect
     ```
 
 2. Create a virtual environment using Anaconda or `virtualenv`:
@@ -71,12 +71,12 @@ To create and run the Docker image:
 
 1. Build the Docker image:
     ```sh
-    docker build -t outreach-composer-for-job-search .
+    docker build -t cold-connect .
     ```
 
 2. Run the Docker container:
     ```sh
-    docker run -p 8501:8501 outreach-composer-for-job-search
+    docker run -p 8501:8501 cold-connect
     ```
 
 3. Open your browser and navigate to **`http://localhost:8501`**.
@@ -87,12 +87,12 @@ A pre-built Docker image is available on Docker Hub:
 
 1. Pull the Docker image:
     ```sh
-    docker pull amanovishnu/outreach-composer-for-job-search:latest
+    docker pull amanovishnu/cold-connect:latest
     ```
 
 2. Run the Docker container:
     ```sh
-    docker run -p 8501:8501 amanovishnu/outreach-composer-for-job-search:latest
+    docker run -p 8501:8501 amanovishnu/cold-connect:latest
     ```
 
 3. Open **`http://localhost:8501`** in your browser to use the Streamlit application.

@@ -10,7 +10,7 @@ from utils import clean_text
 def create_streamlit_app(clean_text):
 
     st.title(
-            "📧 Outreach Composer for Job Search",
+            "📧 Cold Connect",
             help="Simple Streamlit for Generating Cold emails/Messages text for Job search"
     )
     try:
@@ -105,6 +105,6 @@ def create_streamlit_app(clean_text):
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide", page_title="Outreach Composer for Job Search", page_icon="📧")
+    st.set_page_config(layout="wide", page_title="Cold Connect", page_icon="📧")
     create_streamlit_app(clean_text)
 
