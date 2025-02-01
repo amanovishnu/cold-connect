@@ -5,4 +5,4 @@ vectorstore/
 .gitignore
 LICENSE
 README.md
-setuo.cfg
+setup.cfg
