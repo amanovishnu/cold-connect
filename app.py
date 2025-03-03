@@ -4,7 +4,12 @@ from langchain_community.document_loaders import WebBaseLoader
 
 from chains import Chain
 from portfolio import Portfolio
-from utils import clean_text
+from utils import clean_text, get_model_list
+
+
+@st.cache_data
+def cached_get_model_list(api_key):
+    return get_model_list(api_key)
 
 
 def create_streamlit_app(clean_text):
@@ -44,9 +49,9 @@ def create_streamlit_app(clean_text):
         )
         model_selector = st.sidebar.selectbox(
             label="Step 6: Choose a model",
-            options=["llama-3.3-70b-versatile", "mixtral-8x7b-32768", "llama3-70b-8192", "gemma2-9b-it"],
+            options=cached_get_model_list(api_key),
             placeholder="choose a model",
-            help="Choose a model to generate the text [default: llama-3.3-70b-versatile]"
+            help="Choose a model to generate the text"
         )
         temperature = st.sidebar.slider(
             label="Step 7: Creativity",
@@ -97,6 +102,7 @@ def create_streamlit_app(clean_text):
         with st.expander("Response History", icon="📧"):
             for response in st.session_state.response_history:
                 st.code(response, language='markdown', wrap_lines=True)
+                st.divider()
         if upload_file:
             with st.expander("Click here to view uploaded file", icon="📧"):
                 st.dataframe(df, use_container_width=True)

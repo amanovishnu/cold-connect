@@ -30,7 +30,7 @@ def clean_text(text: str) -> str:
     return text
 
 
-def get_model_list() -> list:
+def get_model_list(api_key: str) -> list:
     """
     Retrieves a list of available model IDs from the Groq API.
 
@@ -43,7 +43,6 @@ def get_model_list() -> list:
     Raises:
         requests.exceptions.RequestException: If the request to the Groq API fails.
     """
-    api_key = ""
     url = "https://api.groq.com/openai/v1/models"
     headers = {
         "Authorization": f"Bearer {api_key}",
