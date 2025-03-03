@@ -29,7 +29,7 @@ jobs:
     - name: Build and tag Docker image
       run: |
         docker build -t ghcr.io/${{ github.actor }}/cold-connect:${{ github.sha }} .
-        docker tag ${{ github.actor }}/cold-connect:${{ github.sha }} ${{ github.actor }}/cold-connect:latest
+        docker tag ghcr.io/${{ github.actor }}/cold-connect:${{ github.sha }} ghcr.io/${{ github.actor }}/cold-connect:latest
 
     - name: Push Docker image to GitHub Container Registry
       run: |
