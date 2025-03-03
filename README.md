@@ -83,16 +83,16 @@ To create and run the Docker image:
 
 ##### Run with Pre-Built Image
 
-A pre-built Docker image is available on Docker Hub:
+A pre-built Docker image is available on GitHub Container Registry (ghcr.io):
 
 1. Pull the Docker image:
     ```sh
-    docker pull amanovishnu/cold-connect:latest
+    docker pull ghcr.io/amanovishnu/cold-connect:latest
     ```
 
 2. Run the Docker container:
     ```sh
-    docker run -p 8501:8501 amanovishnu/cold-connect:latest
+    docker run -p 8501:8501 ghcr.io/amanovishnu/cold-connect:latest
     ```
 
 3. Open **`http://localhost:8501`** in your browser to use the Streamlit application.
