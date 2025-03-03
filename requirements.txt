@@ -86,7 +86,7 @@ overrides==7.7.0
 packaging==24.2
 pandas==2.2.3
 pillow==11.0.0
-pip==24.2
+pip==25.0.1
 posthog==3.7.4
 propcache==0.2.1
 protobuf==5.29.2
