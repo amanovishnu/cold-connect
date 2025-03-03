@@ -21,7 +21,7 @@
 
     **Using Anaconda:**
     ```sh
-    conda create -n cenv python=3.10 -y
+    conda create -n cenv python=3.13 -y
     conda activate cenv
     ```
 
@@ -102,8 +102,7 @@ A pre-built Docker image is available on Docker Hub:
 ```sh
 ├── .github                   <- GitHub configuration directory (e.g., workflows for CI/CD)
 ├── notebook                  <- Directory containing Jupyter notebook and portfolio CSV file
-│   ├── my_portfolio.csv      <- Sample portfolio CSV file
-│   └── notebook.ipynb        <- Jupyter notebook for testing and development
+│   └── my_portfolio.csv      <- Sample portfolio CSV file
 ├── .dockerignore             <- Specifies files and directories to ignore when building the Docker image
 ├── .env                      <- Environment variables file (not included in the repository)
 ├── .gitignore                <- Git ignore file
