@@ -21,7 +21,7 @@
 
     **Using Anaconda:**
     ```sh
-    conda create -n cenv python=3.13 -y
+    conda create -n cenv python=3.10 -y
     conda activate cenv
     ```
 
